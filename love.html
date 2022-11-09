@@ -79,7 +79,7 @@
   
     width: 500px;
   
-    animation: animate 1.5s infinite;
+    animation: animate 1.7s infinite;
   
   }
   
@@ -143,8 +143,12 @@
   
     30% {
   
-      transform: scale(0.9);
+      transform: scale(0.8);
   
+    }
+    
+    120% {
+      transform: scale(1.8);
     }
   
     60% {
@@ -155,7 +159,7 @@
   
     100% {
   
-      transform: scale(1);
+      transform: scale(.95);
   
     }
   
@@ -191,11 +195,11 @@
   
       duration:   2, // particle duration in sec
   
-      velocity: 150, // particle velocity in pixels/sec
+      velocity: 200, // particle velocity in pixels/sec
   
-      effect: -1, // play with this for a nice effect
+      effect: -1.2, // play with this for a nice effect
   
-      size:      11, // particle size in pixels
+      size:  12, // particle size in pixels
   
     },
   
@@ -485,7 +489,7 @@
   
         160 * Math.pow(Math.sin(t), 3),
   
-        130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25
+        130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 2
   
       );
   
@@ -633,7 +637,7 @@
   
       render();
   
-    }, 10);
+    }, 100);
   
   })(document.getElementById('pinkboard'));
   
